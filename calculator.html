@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alireza Sarami</title>
+        <link href="css.css" rel="stylesheet">
+        <style>
+            body {
+                background-color:black;
+            }
+
+        </style>
+        <h1 id=header>
+            Personal Website
+        </h1>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="calculator1">
+                <h1>Calculator</h1>
+                <p>Please click button</p>
+                <button onclick="CalFunc()">click</button>
+
+                <script>
+                    function CalFunc()
+                    {
+                        let func = prompt("Please select: + - * / ^","opration");
+                        let num1 = prompt("Please enter num1:","num1");
+                        let num2 = prompt("Please enter num2:","num2");
+                        let ansr;
+                        if(func!=null || func==("+") || func==("-") || func==("*") || func==("/") || func==("^") )
+                        {
+                            if(num1!=null && num2!=null)
+                            {
+                                switch(func)
+                                {
+                                    case "+":
+                                        ansr = (+num1)+(+num2);
+                                        alert("Answer:"+ ansr);
+                                        break;
+                                    case "-":
+                                        ansr = (+num1)-(+num2);
+                                        alert("Answer:"+ ansr);
+                                        break;
+                                    case "*":
+                                        ansr = (+num1)*(+num2);
+                                        alert("Answer:"+ ansr);
+                                        break;
+                                    case "/":
+                                        ansr = (+num1)/(+num2);
+                                        alert("Answer:"+ ansr);
+                                        break;
+                                    case "^":
+                                        Math.pow(+num1,+num2)
+                                        alert("Answer:"+ ansr);
+                                        break;
+                                    default :
+                                        alert("try again");
+                                }
+                            }
+                            else
+                            {
+                                alert("try again");
+                            }
+                        }
+                        else
+                        {
+                            alert("try again");
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <footer class="footer">
+            <a href="https://t.me/alirezasarami"><img src="favicon.ico"alt="Telegram"></a>
+            <a href="https://www.instagram.com/alireza_sarami/"><img src="favicon1.ico"alt="Instagram"></a>
+            <a href="https://www.Facebook.com/alireza.sarami.1"><img src="favicon2.ico"alt="Facebook"></a>
+            <P style="color: white">"DESIGNER: Alireza_Sarami"</P>
+        </footer>
+    </body>
+</html>

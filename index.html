@@ -3,6 +3,12 @@
     <head>
         <title>Alireza Sarami</title>
         <link href="css.css" rel="stylesheet">
+        <script>
+            function func_cal()
+            {
+                document.getElementById("1").class="cal_dropdown_content_1"
+            }
+        </script>
         <style>
             body {
                 background-color:black;
@@ -20,9 +26,16 @@
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="aboutme.html">About me</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
+                <div class="cal_dropdown"> 
+                    <button class="cal" onclick="func_cal()">Calculator</button>
+                    <div id="1" class="cal_dropdown_content">
+                        <a href="calculator.html">Calculator1</a>
+                        <a href="calculator2.html">Calculator2</a>
+                    </div>
+                </div>
             </ul>
         </div>
-        <div >
+        <div>
                 <h2 class="header2">Welcome to my website</h2>
         </div>
         <footer class="footer">

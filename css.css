@@ -1,54 +1,173 @@
-#header {
-    color:white;
-    text-align:center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
-}
-
-
-ul {
-    list-style-type: none;
+    #header {
+        color: white;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+    }
     
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration:underline;
-  }
-  
-  li a:hover{
-    background-color: red;
-  }
-.header2 {
-    color:red;
-    font-size: 500%;
-    text-align: center;
-    padding: 200px;
-    border: 3px solid gray;
-}
-.footer {
-    padding: 50px;
-    border: 3px solid gray;
-    color: white;
-}
-
-#gallery {
-    text-align: center;
-}
-
-.about {
-    text-align: center;
-    padding: 200px;
-    border: 3px solid gray;
-    color: red;
-}
-  
+    .cal {
+        background-color: #333;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: underline;
+        border: none;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .cal_dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .cal_dropdown_content {
+        display: none;
+    }
+    
+    .cal_dropdown_content_1 {
+        display: contents;
+        position: absolute;
+        background-color: #333;
+        padding: 14px 16px;
+        z-index: 1;
+    }
+    
+    .cal_dropdown_content a {
+        color: white;
+        text-decoration: underline;
+        display: block;
+    }
+    
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: underline;
+    }
+    
+    li a:hover .cal:hover {
+        background-color: red;
+    }
+    
+    .header2 {
+        color: red;
+        font-size: 500%;
+        text-align: center;
+        padding: 200px;
+        border: 3px solid gray;
+    }
+    
+    .calculator1 {
+        text-align: center;
+        color: white;
+        padding: 200px;
+        border: 3px solid gray;
+    }
+    
+    .cal_btn {
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        padding: auto;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    
+    .cal_btn_1 {
+        color: black;
+        background-color: gray;
+    }
+    
+    .cal_btn_2 {
+        color: white;
+        background-color: #333;
+        padding: 25px;
+    }
+    
+    .cal_btn_3 {
+        color: white;
+        background-color: orange;
+        font-size: 18px;
+        padding: 25px;
+    }
+    
+    .cal_btn_0 {
+        color: white;
+        background-color: #333;
+        border-radius: 40%;
+        width: 100%;
+    }
+    
+    .cal_td_btn {
+        width: 25%;
+        height: 20%;
+    }
+    
+    .cal_table {
+        border: 2px solid gray;
+        border-radius: 8px;
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        margin: auto;
+        margin-top: 75px;
+        margin-bottom: 75px;
+        padding: 25px;
+        padding-top: 50px;
+        background-image: url(horse.jfif);
+        background-size: 100%;
+    }
+    
+    .cal_out {
+        border: 2px solid gray;
+        width: 300px;
+        height: 50px;
+        background-color: rgb(197, 197, 197);
+        margin: auto;
+        padding-left: 5px;
+    }
+    
+    .footer {
+        padding: 50px;
+        border: 3px solid gray;
+        color: white;
+    }
+    
+    #gallery {
+        text-align: center;
+    }
+    
+    .about {
+        text-align: center;
+        padding: 200px;
+        border: 3px solid gray;
+        color: red;
+    }
+    
+    .calculator {
+        text-align: center;
+        color: white;
+        padding: 200px;
+        border: 3px solid gray;
+    }
+    
+    .cal_dropdown:hover .cal_dropdown_content {
+        display: block;
+    }

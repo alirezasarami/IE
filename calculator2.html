@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alireza Sarami</title>
+        <!--<script type="text/javascript" src="calculator.js"></script> -->
+        <link href="css.css" rel="stylesheet">
+        <script>
+            function dis(val) {
+                document.getElementById("cal_result").value += val
+            }
+
+ 
+            function solve() { 
+                document.getElementById("cal_result").value = eval(document.getElementById("cal_result").value)
+            }
+
+             
+            function clr() {
+                document.getElementById("cal_result").value = ""
+            }
+            function func_cal()
+            {
+                document.getElementById("1").class="cal_dropdown_content_1"
+            }
+        </script>
+        <style>
+            body {
+                background-color:black;
+            }
+
+        </style>
+        <h1 id=header>
+            Personal Website
+        </h1>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <div class="cal_dropdown"> 
+                    <button class="cal" onclick="func_cal()">Calculator</button>
+                    <div id="1" class="cal_dropdown_content">
+                        <a href="calculator.html">Calculator1</a>
+                        <a href="calculator2.html">Calculator2</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div>
+            <table class="cal_table">
+                <tr>
+                    <td colspan="4" class="cal_td_btn" >
+                        <input type="text" class="cal_out" name="cal_result" id="cal_result" readonly="readonly" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_1" value="AC" onclick="javascript:clr();"  />
+                    </td>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_1" value="&plusmn" onclick="javascript:dis('-');"  />
+                    </td>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_1" value="%" onclick="javascript:dis('%');"  />
+                    </td>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_3" value="&divide" onclick="javascript:dis('/');"  />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_2" value="7" onclick="javascript:dis('7');"  />
+                    </td>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_2" value="8" onclick="javascript:dis('8');"  />
+                    </td>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_2" value="9" onclick="javascript:dis('9');"  />
+                    </td>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_3" value="x" onclick="javascript:dis('*');"  />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_2" value="4" onclick="javascript:dis('4');"  />
+                    </td>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_2" value="5" onclick="javascript:dis('5');"  />
+                    </td>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_2" value="6" onclick="javascript:dis('6');"  />
+                    </td>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_3" value="-" onclick="javascript:dis('-');"  />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_2" value="1" onclick="javascript:dis('1');"  />
+                    </td>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_2" value="2" onclick="javascript:dis('2');"  />
+                    </td>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_2" value="3" onclick="javascript:dis('3');"  /> 
+                    </td>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_3" value="+" onclick="javascript:dis('+');"  />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_0" value="0" onclick="javascript:dis('0');"  />
+                    </td>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_2" value="." onclick="javascript:dis('.');"  />
+                    </td>
+                    <td class="cal_td_btn">
+                        <input type="button" class="cal_btn cal_btn_3" value="=" onclick="javascript:solve();" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer class="footer">
+            <a href="https://t.me/alirezasarami"><img src="favicon.ico"alt="Telegram"></a>
+            <a href="https://www.instagram.com/alireza_sarami/"><img src="favicon1.ico"alt="Instagram"></a>
+            <a href="https://www.Facebook.com/alireza.sarami.1"><img src="favicon2.ico"alt="Facebook"></a>
+            <P style="color: white">"DESIGNER: Alireza_Sarami"</P>
+        </footer>
+    </body>
+</html>
